@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' http://ksm-if.com data: gap: ms-appdata: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src filesystem: data: *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; connect-src *;">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>App Title</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+</head>
+
+<body>
+<!-- App root element -->
+<div id="app">
+  <!-- Left panel -->
+  <div class="panel panel-left panel-cover swipeNoFollow closeByBackdropClick">
+      <div class="block list">
+        <p>Sidebar Title</p>
+        <ul>
+          <li class="item-content">
+            <a href="/route1/" data-panel="left" class="panel-close about-button">
+              <div class="item-inner">
+                <div class="item-title">Sidebar Item 1</div>
+              </div>
+            </a>
+          </li>
+          <li class="item-content">
+            <a href="/route2/" data-panel="left" class="panel-close about-button">
+              <div class="item-inner">
+                <div class="item-title">Sidebar Item 2</div>
+              </div>
+            </a>
+          </li>
+          <li class="item-content">
+            <a href="/route3/" data-panel="left" class="panel-close about-button">
+              <div class="item-inner">
+                <div class="item-title">Sidebar Item 3</div>
+              </div>
+            </a>
+          </li>
+          <li class="item-content">
+            <a href="#" data-panel="left" class="panel-close about-button" id="btnSidebar">
+              <div class="item-inner">
+                <div class="item-title">Sidebar Button</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+  <!-- Statusbar overlay -->
+  <div class="statusbar"></div>
+
+  <!-- Your main view, should have "view-main" class -->
+  <div class="view view-main">
+
+  </div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script type="text/javascript" src="js/template7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
